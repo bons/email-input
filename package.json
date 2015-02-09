@@ -1,0 +1,20 @@
+{
+  "name": "email-input",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/beogip/route.js.git"
+  },
+  "devDependencies": {
+    "angular": "*",
+    "angular-mocks": "*",
+    "karma": "*",
+    "karma-browserstack-launcher": "*",
+    "karma-chrome-launcher": "*",
+    "karma-firefox-launcher": "*",
+    "karma-safari-launcher": "*",
+    "karma-phantomjs-launcher": "*",
+    "karma-jasmine": "*"
+  },
+
+  "dependencies": {}
+}
