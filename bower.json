@@ -1,0 +1,25 @@
+{
+    "name": "inputEmail",
+    "version": "0.0.1",
+    "main": "./build/inputEmail.min.js",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "vendors",
+        "lib",
+        "test",
+        "src",
+        "example.html",
+        "Grundfile.js",
+        "karma.conf.js",
+        "package.json"
+    ],
+    "dependencies": {
+        "angular": "*"
+    },
+    "devDependencies": {
+        "angular-mocks": "*",
+        "angular-scenario": "*",
+        "jquery": "*"
+    }
+}
