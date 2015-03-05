@@ -87,6 +87,16 @@ angular.module("bInputEmail", [])
         scp.inputEmail.autocomplete = inputEmailController.validateString(newVal);
       }, true);
 
+      input.bind("blur", function(evt)
+      {
+        if(scp.inputEmail.autocomplete != "")
+        {
+          scp.inputEmail.email += scp.inputEmail.autocomplete;
+          scp.inputEmail.autocomplete = "";
+          scp.$apply();
+        }
+      });
+
       //fix for initial values
       scp.$apply();
     }
