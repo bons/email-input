@@ -1,6 +1,7 @@
 'use strict';
 
-describe('Unit Test: bInputEmail', function() {
+describe('Unit Test: bInputEmail autocomplete', function()
+{
   var $compile,
   $rootScope;
 
@@ -13,7 +14,7 @@ describe('Unit Test: bInputEmail', function() {
     })
   );
 
-  it("should autocomplete gmail", function()
+  it("should show gmail", function()
   {
     var body  = document.querySelector("body");
     body.innerHTML = '<div b-input-email ng-init="inputEmail.email=\'foo@g\'"><input type="text" placeholder="example@email.com" ng-model="inputEmail.email"></div>';
@@ -24,7 +25,7 @@ describe('Unit Test: bInputEmail', function() {
     expect($rootScope.inputEmail.autocomplete).toBe("mail.com");
   });
 
-  it("should autocomplete hotmail", function()
+  it("should show hotmail", function()
   {
     var body  = document.querySelector("body");
     body.innerHTML = '<div b-input-email ng-init="inputEmail.email=\'foo@h\'"><input type="text" placeholder="example@email.com" ng-model="inputEmail.email"></div>';
@@ -35,7 +36,7 @@ describe('Unit Test: bInputEmail', function() {
     expect($rootScope.inputEmail.autocomplete).toBe("otmail.com");
   });
 
-  it("should autocomplete outlook", function()
+  it("should show outlook", function()
   {
     var body  = document.querySelector("body");
     body.innerHTML = '<div b-input-email ng-init="inputEmail.email=\'foo@o\'"><input type="text" placeholder="example@email.com" ng-model="inputEmail.email"></div>';
@@ -46,7 +47,7 @@ describe('Unit Test: bInputEmail', function() {
     expect($rootScope.inputEmail.autocomplete).toBe("utlook.com");
   });
 
-  it("should autocomplete yahoo", function()
+  it("should show yahoo", function()
   {
     var body  = document.querySelector("body");
     body.innerHTML = '<div b-input-email ng-init="inputEmail.email=\'foo@y\'"><input type="text" placeholder="example@email.com" ng-model="inputEmail.email"></div>';
@@ -57,7 +58,7 @@ describe('Unit Test: bInputEmail', function() {
     expect($rootScope.inputEmail.autocomplete).toBe("ahoo.com");
   });
 
-  it("should autocomplete aol", function()
+  it("should show aol", function()
   {
     var body  = document.querySelector("body");
     body.innerHTML = '<div b-input-email ng-init="inputEmail.email=\'foo@a\'"><input type="text" placeholder="example@email.com" ng-model="inputEmail.email"></div>';
@@ -68,7 +69,7 @@ describe('Unit Test: bInputEmail', function() {
     expect($rootScope.inputEmail.autocomplete).toBe("ol.com");
   });
 
-  it("should autocomplete live", function()
+  it("should show live", function()
   {
     var body  = document.querySelector("body");
     body.innerHTML = '<div b-input-email ng-init="inputEmail.email=\'foo@l\'"><input type="text" placeholder="example@email.com" ng-model="inputEmail.email"></div>';
@@ -79,7 +80,7 @@ describe('Unit Test: bInputEmail', function() {
     expect($rootScope.inputEmail.autocomplete).toBe("ive.com");
   });
 
-  it("should autocomplete icloud", function()
+  it("should show icloud", function()
   {
     var body  = document.querySelector("body");
     body.innerHTML = '<div b-input-email ng-init="inputEmail.email=\'foo@i\'"><input type="text" placeholder="example@email.com" ng-model="inputEmail.email"></div>';

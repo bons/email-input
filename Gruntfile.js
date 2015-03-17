@@ -23,6 +23,7 @@ module.exports = function(grunt){
         karma: {
           continuous: {
             configFile: 'karma.conf.js',
+            browsers: ['Chrome', 'Safari', 'Firefox', 'PhantomJS'],
             singleRun: true
           },
           unit: {
